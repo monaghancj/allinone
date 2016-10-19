@@ -1,3 +1,9 @@
 const h = require('react-hyperscript')
+const { Router, Route, hashHistory } = require('react-router')
 
-module.exports = h('h1', 'Hello World')
+const Home = require('./components/Home')
+
+module.exports = _ =>
+  h(Router, { history: hashHistory }, [
+    h(Route, { path: '/', component: Home}, 'Home')
+  ])
