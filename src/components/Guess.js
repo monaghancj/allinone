@@ -57,10 +57,6 @@ const React = require('react')
 // higher or lower
 
 
-
-
-
-
 module.exports=React.createClass({
 
   getInitialState: function() {
